@@ -1,33 +1,25 @@
-1. Installing Database ( we are using PostgreSQL here ) 
+Instructions :: 
+
+1. This project is the simple Text Classifier Model build with  " Naive Bayes Classifier " with the help of Keras Library.
+
+**I have used Keras to build this model, as it handles all the complexity behind building Machine Learning Models and gives us a clean code when building ML models
 	
-	'sudo apt-get install postgresql'
+2. This Model will predict the Category of the given input into 'Politics' or 'Sports'
 
-	open your database in terminal by using the command ' su - postgres '
-	
-	Create a database by using command ' createdb learningflask '
+3. Based on the input given in the given HTML form you will get the output saying that "The input you have entered is related to Sports / Politics "
 
-2. Create a virtual environment 
+Usage :: 
 
-	pip install virtualenv
-
-	create a new virtual env by using 'virtualenv envname'
-
-	activate the virtual env using /source/envname/bin/activate
-
-	Now install the flask in the virtual env by using the command 'pip install flask'
-
-3. Deployment Environment  ( heroku ) 
-
-	Visit heroku.com and signup for a account
-	Install heroku cli using the command 'sudo snap  install --classic heroku'
-	Login to heroku in terminal using command 'heroku login'
+Create a Virtual Environment with 
+"pip install virtualenv"
+"virtualenv your_env_name"
 
 
-Under Construction : Will be completed soon 
+Install the requirements
+"pip install requirements.txt"
 
-You can view this app on heroku :
-
-https://flaskappksk.herokuapp.com/
-
+Run the file "python final.py"
+Open the Local Server
 
 
+See this live App on Heroku ::   https://ml-classifier-app.herokuapp.com/
