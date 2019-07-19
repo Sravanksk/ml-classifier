@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+	<header>
+
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">VitWit</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="#">Home</a></li>
+		      
+		      <li><a href="https://www.linkedin.com/in/sravankumar7/">About Me</a></li>
+		      <li><a href="https://github.com/sravanksk">Source Code</a></li>
+		    </ul>
+		  </div>
+		</nav>
+
+
+
+
+		<div class="container">
+			<div id="brandname">
+				<h1>Simple Text Classification </h1>
+			</div>
+
+				<br>
+					<h4>Classifies the given input into two classes ( Political or Sports ) </h4>
+
+						<form action="{{ url_for('predict')}}" method="POST">
+
+							<p>Enter Your Message Here</p>
+ 							<textarea name="message" rows="4" cols="50" required></textarea>
+							<br/>
+							<input type="submit" class="btn-info" value="predict">
+					
+						</form>
+				</br>
+		</div>
+	</header>
+
+
+	
+
+</body>
+</html>

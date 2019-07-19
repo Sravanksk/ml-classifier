@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <main class="hero-section">
+    <div class="container">
+      
+      <div class="section-content">
+        <h2>Discover places near you.</h2> <br>
+
+        <a href="#" class="btn-primary"><p style="color:#3372df"><bold>Sign up</bold><p></a>
+        <a href="{{ url_for('about') }}"><p style="color:#3372df"><bold>Learn More</bold></p></a> 
+      </div>
+
+      <div class="section-device">
+        <img src="static/img/device.jpg">
+      </div>
+      
+      <div class="clearfix"></div>
+
+    </div>
+  </main>
+{% endblock %}
